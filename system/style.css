@@ -219,7 +219,6 @@ li{
 .back-blue{
     background-color: #409EEF;
     width: 100%;
-    min-height: 100vh; 
     display: flex; 
     flex-direction: column;
     align-items: center; 
@@ -283,22 +282,59 @@ textarea {
     background-color: #F2F2F2;
     border-radius: 5px; /* Закругление углов */
     box-sizing: border-box; /* Учет отступов и границ в ширине */
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
 }
 
-button {
-    background-color: #30C7F7; /* Цвет кнопки */
+.required {
+    color: red; /* Цвет звездочки */
+}
+
+.button-submit {
+    background-color: #4AC2EE; /* Цвет кнопки */
     color: white; /* Цвет текста кнопки */
     border: none; /* Без границы */
-    border-radius: 5px; /* Закругление углов кнопки */
+    border-radius: 1px; /* Закругление углов кнопки */
     padding: 10px; /* Отступы внутри кнопки */
     cursor: pointer; /* Указатель при наведении */
     width: 100%; /* Ширина кнопки */
 }
 
-button:hover {
-    background-color: #28A0D1; /* Цвет кнопки при наведении */
+.button-submit:hover {
+    background-color: #409EEF; /* Цвет кнопки при наведении */
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    border-top: 3px solid #FFFFFF; /* Цвет границы */
+    border-bottom: 3px solid #FFFFFF; /* Цвет границы */
+    background-color: #409EEF;
+    height: auto;
+    padding-top: 40px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+h4{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: row;
+}
 @media (max-width: 768px) {
     .button-office h1:not(:last-child) {
         display: none; 
